@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Tera&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+@theme {
+  /* =========================================================
+     CORE BACKGROUNDS
+  ========================================================= */
+
+  --color-bg-primary: oklch(0.13 0.02 260);
+  --color-bg-secondary: oklch(0.17 0.02 260);
+  --color-bg-tertiary: oklch(0.2 0.02 260);
+
+  --color-card: oklch(0.22 0.02 260);
+  --color-card-hover: oklch(0.25 0.025 260);
+
+  --color-border-soft: oklch(0.28 0.015 260);
+  --color-border-strong: oklch(0.35 0.02 260);
+
+  /* =========================================================
+     TEXT
+  ========================================================= */
+
+  --color-text-primary: oklch(0.93 0.01 260);
+  --color-text-secondary: oklch(0.75 0.015 260);
+  --color-text-muted: oklch(0.6 0.015 260);
+  --color-text-disabled: oklch(0.45 0.01 260);
+
+  /* =========================================================
+     ACCENTS (AI THEME)
+  ========================================================= */
+
+  --color-accent-green: oklch(0.82 0.2 145);
+  --color-accent-blue: oklch(0.72 0.18 250);
+  --color-accent-purple: oklch(0.74 0.22 300);
+  --color-accent-cyan: oklch(0.8 0.18 190);
+
+  /* =========================================================
+     STATUS COLORS
+  ========================================================= */
+
+  --color-success: oklch(0.8 0.18 150);
+  --color-warning: oklch(0.85 0.17 85);
+  --color-error: oklch(0.7 0.22 25);
+  --color-info: oklch(0.75 0.18 240);
+
+  /* =========================================================
+     GLOW VARIANTS
+  ========================================================= */
+
+  --glow-green: 0 0 20px oklch(0.82 0.2 145 / 0.5);
+  --glow-blue: 0 0 20px oklch(0.72 0.18 250 / 0.5);
+  --glow-purple: 0 0 20px oklch(0.74 0.22 300 / 0.5);
+
+  /* =========================================================
+     RADIUS SCALE (Premium SaaS Feel)
+  ========================================================= */
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  /* =========================================================
+     SHADOW SYSTEM
+  ========================================================= */
+
+  --shadow-sm: 0 4px 12px oklch(0.05 0.01 260 / 0.4);
+  --shadow-md: 0 10px 30px oklch(0.05 0.01 260 / 0.5);
+  --shadow-lg: 0 20px 50px oklch(0.05 0.01 260 / 0.6);
+
+  /* =========================================================
+     FONT FAMILIES
+  ========================================================= */
+
+  /* Primary UI: Modern, highly legible sans-serif (Inter style) */
+  /* Primary UI: Now using Exo as the priority for that high-tech feel */
+  --font-sans:
+    "Exo", "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* If you want to keep Inter for body text but use Exo for headings: */
+  /* You can create a custom font name like --font-display */
+  --font-display: "Exo", "Lexend Tera", sans-serif;
+
+  /* Keep your Mono stack as is */
+  --font-mono:
+    "IBM Plex Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace;
+  /* =========================================================
+     FONT WEIGHTS (For that AgentGPT Bold Look)
+  ========================================================= */
+
+  --font-weight-logo: 800;
+  --font-weight-heading: 700;
+  --font-weight-label: 600;
+}
+
+/* Custom scrollbar for terminal */
+.terminal-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.terminal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
